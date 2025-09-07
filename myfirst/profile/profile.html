@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Profile</title>
+	<link rel="stylesheet" type="text/css" href="css/profile.css">
+
+	<!-- font awesome cdn-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+
+<div id="first_login_containor">
+	<div id="pro_cover">
+		<div id="pro_box">
+			<div id="pro_pic">
+				<i class="fas fa-user" id="user_dummy"></i>
+				<input type="file" accept="image/*" id="upload_pic">
+			</div>
+			<p id="upp_text">Upload your profile photo</p>
+			<h1 id="profile_name"></h1>
+			<button id="next_btn">Next <i class="fa-solid fa-forward"></i></button>
+		</div>
+	</div>
+</div>
+
+
+<!-- user profile page start -->
+
+
+
+	<div id="user_profile_box">
+
+		<!-- profile cover picture -->
+		<div id="cover_pic">
+			<!-- user profile piture -->
+			<div id="user_dp"></div>
+		</div> 
+		<!-- user profile name -->
+		<h1 id="user_profile_name"></h1>
+
+		 <div id="application">
+		 	<a href="apps/contact/contact.html">
+			 	<div id="contact">
+			 		<i class="fa-solid fa-address-book"></i>
+			 		<p id="contact_txt">My Contacts</p>
+			 	</div>
+		 	</a>
+
+		 	<a href="apps/player/player.html">
+		 		<div id="player">
+			 		<i class="fas fa-play-circle"></i>
+			 		<p id="player_txt">Video Player</p>
+		 		</div>
+		 	</a>	
+		 	
+
+		 	<div id="logout">
+		 		<i class="fas fa-sign-out-alt"></i>
+		 		<p id="logout_txt">Logout !</p>
+		 	</div>
+		 </div>
+
+		 <!-- footer start -->
+		<div id="footer">
+			<p id="dev_info">Developed with Genius</p>
+		</div>	
+	</div>
+			
+
+<script type="text/javascript" src="js/profile.js"></script>
+</body>
+</html>

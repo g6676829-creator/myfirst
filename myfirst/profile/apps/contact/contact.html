@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Contacts</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+	<!-- font awesome cdn-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- animate.css cdn -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+	<!-- contact header elements -->
+	<div id="header">
+		<div id="con_profile_image"></div>
+	</div>
+
+	<i class="fas fa-plus-circle" id="plus_icon"></i>
+
+
+	<!-- add new contact page -->
+	
+	<div id="add_new_contact_bg" class="animate__animated animate__fadeIn">
+		<center>
+			<div id="add_new_cnt_box" class="animate__animated animate__slideInDown">
+				<h1 id="allcontact_txt">Add New Contact</h1>
+				<!-- empty warning -->
+
+				<form id="add_new_cnt_form">
+					<small id="empty_warning"> <i class="fa-solid fa-triangle-exclamation"></i> Please fill the name and number...</small>
+					<input type="text" id="name_input" placeholder="Enter Name">
+					<input type="number" id="num_input" placeholder="Enter Contact Nunber">
+					
+					<button  type="submit" id="save_btn">Save</button>
+					<button  type="button" id="close_btn">Close</button>
+				</form>
+			</div>
+		</center>	
+	</div>
+
+
+
+	<div id="containor">
+		<div id="contact_header"><!-- heaer div -->
+			<h1><i class="fa-regular fa-address-book"></i> All Contact</h1>
+			<input type="search" name="search" id="search" placeholder="Search your contacts">
+			<button id="search_btn"><i class="fas fa-search"></i> Search</button>
+		</div>
+
+		<div id="contact_list_box">
+			<!-- all elements will be dynamic create in java script -->
+		</div>
+	</div>
+	
+
+
+<script type="text/javascript" src="js/contact.js"></script>
+</body>
+</html>

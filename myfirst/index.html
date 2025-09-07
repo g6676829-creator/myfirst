@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>my first web application</title>
+	<link rel="stylesheet" type="text/css" href="style/index.css" />
+	<!-- animate.css cdn -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+	<!-- font awesome cdn-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+	<!-- signup page start -->
+
+<div id="cont">
+	<div id="box">
+
+		
+
+		<div id="signup_page" class="animate__animated animate__flipInY">
+			<h1>Sign up</h1>
+
+			<!-- sign up form -->
+			<form id="signup_form" autocomplete="off">
+				<input type="text" name="name" placeholder="Name" required="required" id="signup_name">
+
+				<input type="email" name="email" placeholder="Email ID" required="required" id="signup_email">
+				<small id="email_warn"> <i class="fa-solid fa-triangle-exclamation"></i> this email id already exist...</small>
+
+				<input type="number" placeholder="Phone number" required="required" id="signup_number">
+				<input type="password" name="password" placeholder="Create password" required="required" id="signup_pass">
+
+				<button type="submit" name="submit" id="signup_btn">Signup !</button>
+			</form>
+			<p>I already have an account <spen id="login_text">Login !</spen></p>
+		</div>
+
+
+		<div id="login_page" class="animate__animated animate__flipInY">
+			<h1>Log in</h1>
+
+			<!-- log in form -->
+			<form id="login_form" autocomplete="off">
+				<input type="email" name="email" placeholder="Email" required="required" id="login_email">
+				<small id="login_warn"><i class="fa-solid fa-triangle-exclamation"></i> Email is not registered please sign up</small>
+
+				<input type="password" name="password" placeholder="password" required="required" id="login_pass">
+				<small id="login_pass_warn"><i class="fa-solid fa-triangle-exclamation"></i> Please enter correct password</small>
+
+				<button type="submit" name="submit" id="login_btn">Login</button>
+			</form>
+			<p>I don't have an account <spen id="signup_text">Signup !</spen></p>
+		</div>
+		
+	</div>
+</div>
+
+
+
+<!-- java scrip pages start -->
+<script type="text/javascript" src="behave/index.js"></script>
+<script type="text/javascript" src="behave/login_signup.js"></script>
+<!-- java script pages end -->
+</body>
+</html>

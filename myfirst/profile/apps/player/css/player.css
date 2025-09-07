@@ -1,0 +1,328 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: rgb(36,0,20);
+	background: linear-gradient(90deg, rgba(36,0,20,0.1486002922058105) 28%, rgba(192,0,255,0.2267252922058105) 100%);
+}
+
+
+/*player design*/
+#screen_div{
+	width: 70%;
+	height: 100vh;
+	padding: 20px;
+	float: left;
+}
+
+
+#progress_bg{
+	width: 100%;
+	height: 10px;
+	background-color: white;
+	padding-top: 1px;
+	cursor: pointer;
+}
+
+#progress_bar{
+	height: 80%;
+	width: 1px;
+	background: #8E2DE2;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#control_div{
+	width: 100%;
+	height: 74px;
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#ply_btn,#other_btn{
+	font-size: 20px;
+	color: white;
+	position: relative;
+}
+
+#play_caret:hover, .back_icon:hover, .next_icon:hover, .valume_icon:hover, #setting:hover, .expand_icon:hover{
+	cursor: pointer;
+	color: #ccc;
+	transition: .5s;
+	/*font-size: 21px;*/
+}
+
+#setting,#play_caret{
+	margin: 0px 20px;
+}
+
+
+#control_div p{
+	font-family: ubuntu;
+	font-size: 15px;
+	color: white;
+}
+
+
+
+
+/*playlist design*/
+#playlist_div{
+	width: 30%;
+	height: 100vh;
+	padding: 20px;
+	float: right;
+}
+
+#title,#url{
+	width: 100%;
+	height: 30px;
+	border: none;
+	outline: none;
+	margin-bottom: 10px;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: white;
+	font-family: ubuntu;
+	font-size: 15px;
+}
+
+#add_btn{
+	width: 100%;
+	height: 30px;
+	border: none;
+	outline: none;
+	padding: 10px;
+	border-radius: 5px;
+	background: #8E2DE2;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	font-family: ubuntu;
+	font-size: 15px;
+	color: white;
+}
+
+#frm{
+	background-color: rgba(0, 0, 0, 0.8);
+	border-radius: 5px;
+	display: none;
+}
+
+#adnew_div{
+	width: 100%;
+	height: 15%;
+	position: relative;
+}
+
+#addnew_txt{
+	font-size: 20px;
+	font-family: ubuntu;
+	color: blue;
+}
+
+#adnew_div h1{
+	font-size: 25px;
+	font-family: ubuntu;
+	color: blue;
+	margin-bottom: 10px;
+}
+
+#addnew_txt i:hover{
+	cursor: pointer;
+}
+
+
+
+#drop_icon,#drop_icon2{
+	display: block;
+	width: 10px;
+	float: right;
+	margin-right: 80px;
+	font-size: 25px;
+	position: absolute;
+	top: 38px;
+	left: 150px;
+}
+
+#drop_icon2{
+	display: none;
+}
+
+
+/*search design*/
+
+#search{
+	font-size: 18px;
+	color: black;
+	text-shadow: 0px 0px 10px white;
+	position: absolute;
+	top: 5px;
+	right: 20px;
+}
+
+#search_box{
+	width: 75%;
+	height: 30px;
+	font-family: ubuntu;
+	padding: 10px;
+	border: none;
+	outline: none;
+	box-shadow: 0px 0px 10px #323232;
+	border-radius: 10px 0px 10px 10px;
+	position: absolute;
+	top: 5px;
+	right: 40px;
+	display: none;
+}
+
+
+/*all videos listing box design*/
+#videosListingBox{
+	width: 100%;
+	height: 85%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+#listedVideoBox{
+	width: 100%;
+	height: auto;
+	background-color: white;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 5px 0;
+}
+
+#listedVideoBox p{
+	width: 100%;
+	color: blue;
+	font-size: 15px;
+	font-family: ubuntu;
+	margin-bottom: 5px;
+}
+
+#playBtn, #deleteBtn{
+	width: 50%;
+	height: 25px;
+	border: none;
+	outline: none;
+	font-family: ubuntu;
+	color: white;
+}
+
+#playBtn{
+	background-color: #17701b;
+}
+
+#deleteBtn{
+	background-color: #ff1c58;
+}
+
+/*scroll bar design*/
+#videosListingBox::-webkit-scrollbar{
+	width: 5px;
+}
+
+#videosListingBox::-webkit-scrollbar-thumb{
+	background-color: blueviolet;
+}
+
+
+
+/*volume & speed control range design*/
+#volumeControl,#speedControl{
+	appearance: none;
+	transform: rotate(270deg);
+	outline: none;
+	width: 60px;
+	height: 10px;
+	border-radius: 5px;
+	background-color: #ff1c58;
+	position: absolute;
+	top: -38px;
+	right: 70px;
+}
+
+#speedControl{
+	right: 22px;
+	background-color: yellow;
+}
+
+#volumeControl::-webkit-slider-thumb, #speedControl::-webkit-slider-thumb{
+	appearance: none;
+	height: 12px;
+	width: 8px;
+	border-radius: 5px;
+	background-color: blue;
+}
+
+#volumeControl:hover, #speedControl:hover{
+	box-shadow: 0px 0px 1px 1px white;
+	transition: .5s;
+	cursor: pointer;
+}
+
+
+
+
+/*mobile responsive design*/
+
+@media(max-width:426px){
+	#screen_div{
+		width: 100%;
+		height: auto;
+		padding: 5px;
+	}
+
+	#playlist_div{
+		width: 100%;
+		height: 60%;
+		padding: 10px;
+		float: left;
+	}
+
+	#playlist_div p{
+		text-align: left;
+	}
+
+	
+	#control_div{
+		height: 40px;
+	}
+
+	#ply_btn,#other_btn{
+	font-size: 10px;
+	color: white;
+	}
+
+	#setting,#play_caret{
+		margin: 0px 10px;
+	}
+
+	#control_div p{
+		font-size: 10px;
+	}
+
+	/*volume & speed control range design*/
+	#volumeControl, #speedControl{
+		width: 40px;
+		height: 7px;
+		top: -30px;
+		right: 30px;
+	}
+
+	#speedControl{
+		right: 7px;
+	}
+
+	#volumeControl::-webkit-slider-thumb, #speedControl::-webkit-slider-thumb{
+		height: 7px;
+		width: 5px;
+	}
+}
